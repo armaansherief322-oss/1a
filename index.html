@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🌟 MiniBlog</h1>
+            <p>Share your thoughts with friends</p>
+        </header>
+
+        <form id="postForm">
+            <input type="text" id="name"
+                   placeholder="Enter your name" required>
+
+            <textarea id="thought"
+                      placeholder="What are you thinking?"
+                      required></textarea>
+
+            <button type="submit" class="post-btn">Post</button>
+        </form>
+
+        <h2>Recent Posts</h2>
+
+        <div id="posts">
+
+            <div class="post">
+                <h3>👤 AADHI NARAYANAN S</h3>
+                <p>OS - OPERATING SYSTEM</p>
+                <button class="like-btn" onclick="likePost(this)">
+                    ❤️ Like (<span>18</span>)
+                </button>
+                <button class="comment-btn"
+                        onclick="addComment(this)">💬 Comment</button>
+                <div class="comments">
+                    <p>💬 <b>Comment:</b> first in first out</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <h3>👤 KAVIN S S</h3>
+                <p>FSWD - FULL STACK WEB DEVELOPMENT</p>
+                <button class="like-btn" onclick="likePost(this)">
+                    ❤️ Like (<span>17</span>)
+                </button>
+                <button class="comment-btn"
+                        onclick="addComment(this)">💬 Comment</button>
+                <div class="comments">
+                    <p>💬 <b>Comment:</b> HTML CSS JAVA SCRIPT</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
